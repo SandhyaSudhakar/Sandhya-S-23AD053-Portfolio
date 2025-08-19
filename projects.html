@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: lightblue; /* Match Home & About hover color */
+        }
+
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        details {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        summary {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        summary:hover {
+            background-color: lightblue; /* Match Home & About hover color */
+        }
+
+        details[open] summary {
+            background-color: lightblue; /* Match when open */
+        }
+
+        details p {
+            padding: 15px;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>List of Projects</h1> <!-- Inline CSS -->
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Click a project to view details</h2>
+
+        <details>
+            <summary>Travel agency website</summary>
+            <p>This Tour and Travel Agency website is a responsive platform for exploring destinations, booking trips, and viewing travel packages.Users can easily navigate through services, gallery, reviews, and contact options.
+Designed with HTML, CSS, and JavaScript, it offers a clean, user-friendly experience.</p>
+        </details>
+
+        <details>
+            <summary>Event Registration System</summary>
+            <p>This Event Registration System allows users to log in, browse events, and register with ease. It includes a simple form for participant details and a secure payment gateway. Users can pay via card or GPay for quick transactions.
+Upon successful payment, tickets are instantly sent to the registered email.</p>
+        </details>
+
+        <details>
+            <summary>AI crop disease detection</summary>
+            <p>This AI-based Crop Disease Detection system uses machine learning and computer vision to identify plant diseases accurately. It replaces time-consuming manual inspections with fast, automated detection. The system helps farmers take timely action, reducing crop losses and improving yield.
+            </p>
+        </details>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sandhya S. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+

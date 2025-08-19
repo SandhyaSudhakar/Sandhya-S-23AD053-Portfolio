@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    /* Internal CSS: Extra tweaks for Home Page */
+    .profile-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+      margin-top: 10px;
+    }
+  </style>
+
+  <!-- External CSS content placed inline here for demo -->
+  <style>
+    /* External CSS content */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f0f0f0;          
+      --card: #ffffff;        
+      --text: #000;           
+      --muted: #333;          
+      --accent: #0077cc;      
+      --border: #bbb;         
+      --shadow: 0 5px 15px rgba(0,0,0,0.15);
+      --radius: 16px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #f0f0f0;
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+    }
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between;
+      padding: 14px 20px;
+    }
+    .brand a { color: var(--text); text-decoration: none; font-weight: bold; }
+    nav ul { display: flex; gap: 18px; list-style: none; }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 10px;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover {
+      color: var(--text);
+      background: rgba(0,0,0,0.05);
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 110px 20px 60px;
+    }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 900px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #eee;
+      text-decoration: none;
+      color: var(--text);
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #ddd; }
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    .round { border-radius: 50%; }
+    .center { text-align: center; }
+    .mt-10 { margin-top: 10px; }
+    .mt-20 { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand"><a href="index.html">Sandhya S</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section grid-2">
+      <div>
+        <h1>Hi, I’m <span>Sandhya S</span></h1> <!-- inline CSS -->
+        <p class="mt-10">
+          I’m an aspiring software developer who loves building clean, fast, and accessible web experiences.
+          I focus on HTML5, CSS, and Python—learning something new every day.
+        </p>
+        <div class="mt-20">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn" href="contact.html" style="margin-left:10px;">Contact Me</a> <!-- inline CSS -->
+        </div>
+      </div>
+
+      <div class="center">
+        <img src="C:\Users\sandhya\Downloads\Sandhya S .jpg" alt="Portrait of Your Name"
+             class="round"
+             style="width: 240px; height: 240px; object-fit: cover; border: 3px solid #aaa;">
+        <p class="profile-name">SANDHYA S</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Intro</h2>
+      <p class="mt-10">
+        I enjoy turning ideas into user-friendly interfaces. My interests include front-end development, 
+        data visualization, and problem solving that make life easier. I love to explore around every sides of the world.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span>2025</span> Sandhya S. All rights reserved.</p>
+  </footer>
+</body>
+</html>
